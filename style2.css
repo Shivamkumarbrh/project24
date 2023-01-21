@@ -1,0 +1,125 @@
+.apartment{
+    width: 720px;
+    border: 1px solid #ddd;
+}
+.apartmentMain P{
+    font-size: 28px;
+    color: rgb(124, 191, 23);
+    margin: 15px 15px;
+}
+.imgContainer{
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    margin: 15px 15px;
+}
+.apartmentMain button{
+    position: absolute;
+    bottom: 10px;
+    padding: 15px 18px;
+    border: none;
+    left: 0px;
+    background-color: black;
+    color: white;
+}
+.imgContainer img{
+    width: calc( 100% - 30px);
+    box-sizing: border-box;
+}
+.apartmentImg{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 15px;
+    justify-content: space-between;
+}
+.imgBox{
+    width: 24%;
+}
+.imgBox img{
+    width: 100%;
+}
+.space,.Amenities{
+    margin: 0px 15px;
+    padding: 25px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+}
+.spaceFirst{
+    width: 100%;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.spaceBox{ 
+    width: 50%;
+}
+.spaceBox p{
+    text-align: left;
+    margin: 15px 0px;
+    font-size: 20px;
+}
+.spaceBox i{
+    padding: 0px 10px;
+}
+.extraInfo{
+    margin: 0px 15px;
+    border-bottom: 1px solid #ddd;
+}
+.extraInfo h2{
+    padding: 15px 0px;
+}
+.extraLastP{
+    padding: 15px 0px;
+}
+.extraLastP i{
+    padding:0px 2px;
+}
+.extraInfo button{
+    padding: 12px 80px;
+    border: none;
+    background-color: rgb(24, 174, 24);
+    color:white;
+    margin: 5px 0px 20px 0px;
+}
+.extraInfo button:hover{
+    background-color: #ddd;
+    cursor: pointer;
+    color: black;
+}
+.contact{
+    padding: 0px 20px;
+}
+.contact h1{
+    padding: 20px 0px;
+}
+.contact p i{
+    padding-right: 15px;
+}
+#contactP{
+    padding: 15px 0px;
+}
+.contact input{
+    width: 100%;
+    padding:10px 15px;
+    margin: 7px 0px;
+    box-sizing: border-box;
+}
+.contact input:focus{
+    outline: 1px solid blue;
+}
+.contact button{
+    padding: 12px 80px;
+    border: none;
+    background-color: rgb(24, 174, 24);
+    color:white;
+    margin: 5px 0px 20px 0px;
+}
+.contact button:hover{
+    background-color: #ddd;
+    cursor: pointer;
+    color: black;
+}
+#contactLast{
+    margin: 15px 0px;
+}
