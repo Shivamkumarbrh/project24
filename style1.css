@@ -1,16 +1,21 @@
 *{
     margin: 0px;
     padding: 0px;
+    /* outline: 1px solid #f00 !important; */
     font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
 .container{
     display: flex;
     margin: 0px auto;
+    box-sizing: border-box;
     justify-content: center;
-    width: 100%;
+    width: 80%;
+}
+.rentMobile{
+    display: none;
 }
 .rent{
-    width: 250px;
+    width: 25%;
     height: 100vh;
     position:sticky;
     overflow: auto;
@@ -19,6 +24,7 @@
   box-sizing: border-box;
 }
 .rentHeading{
+    box-sizing: border-box;
     padding:30px 20px;
     border-bottom: 1px solid #ddd;
 }
@@ -43,6 +49,7 @@
 .cheak button{
     width: 100%;
     padding: 10px 12px;
+    cursor: pointer;
     box-sizing: border-box;
     border: none;
     background-color: rgb(24, 174, 24);
@@ -60,6 +67,7 @@
     padding: 20px 20px;
     color: black;
 }
-.bottom a:hover{
+.bottom a:hover,.cheak button:hover{
     background-color: #aaa;
+    color: black;
 }

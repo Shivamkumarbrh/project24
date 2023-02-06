@@ -7,11 +7,53 @@
     <title>Rental_Apartment</title>
     <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <script src="https://kit.fontawesome.com/14d686e227.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="rentMobile">
+        <span>Rental</span>
+        <span>
+            <button id="rentMobileBtn"><i class="fa-solid fa-bars"></i></button></span>
+    </div>
+    <div class="MobileContainer">
+    <div class="rentMobileContent">
+        <div class="rentHeading">
+            <p>
+                <span class="headingP">Rental</span> <br>
+                <span class="headingP">from $99</span> <br>
+                <span>per night</span>
+            </p>
+            <i class="fa-solid fa-xmark" id="closebtn"></i>
+        </div> 
+        <div class="cheak">
+            <form action="#">
+            <p><i class="fa-regular fa-calendar-check"></i>Chek in</p>
+            <input type="date" placeholder="DD-MM-YYYY" required>
+            <p><i class="fa-regular fa-calendar"></i>Chek Out</p>
+            <input type="date" placeholder="DD-MM-YYYY">
+            <p><i class="fa-solid fa-person"></i>Adult</p>
+            <input type="number" value="0" min="0">
+            <p><i class="fa-solid fa-child"></i>Kids</p>
+            <input type="number" value="0" min="0">
+            <button type="submit">Search Availability</button>
+        </form>
+        </div>   
+        <div class="bottom">
+            <a href="#apartmentSection"><i class="fa-solid fa-building"></i>Apartment</a>
+            <a href=""><i class="fa-solid fa-rss"></i>Subscribe</a>
+            <a href="#contactSection"><i class="fa-solid fa-envelope"></i>Contact</a>
+        </div>
+    </div>
+    <div class="restMobileContent">
+        
+    </div>
+</div>
+
     <div class="container">
+
+
 
         <div class="rent">
         <div class="rentHeading">
@@ -20,44 +62,49 @@
             <p>per night</p>
         </div> 
         <div class="cheak">
+            <form action="#">
             <p><i class="fa-regular fa-calendar-check"></i>Chek in</p>
-            <input type="text" placeholder="DD-MM-YYYY">
+            <input type="date" placeholder="DD-MM-YYYY" required>
             <p><i class="fa-regular fa-calendar"></i>Chek Out</p>
-            <input type="text" placeholder="DD-MM-YYYY">
+            <input type="date" placeholder="DD-MM-YYYY">
             <p><i class="fa-solid fa-person"></i>Adult</p>
-            <input type="number" step="1">
+            <input type="number" value="0" min="0">
             <p><i class="fa-solid fa-child"></i>Kids</p>
-            <input type="number" step="0">
-            <button>Search Availability</button>
+            <input type="number" value="0" min="0">
+            <button type="submit">Search Availability</button>
+        </form>
         </div>   
         <div class="bottom">
-            <a href="#"><i class="fa-solid fa-building"></i>Apartment</a>
+            <a href="#apartmentSection"><i class="fa-solid fa-building"></i>Apartment</a>
             <a href=""><i class="fa-solid fa-rss"></i>Subscribe</a>
-            <a href=""><i class="fa-solid fa-envelope"></i>Contact</a>
+            <a href="#contactSection"><i class="fa-solid fa-envelope"></i>Contact</a>
         </div>
     </div>
            <!-- The Apartment -->
+
           <div class="apartment">
+            <section id="apartmentSection">
             <div class="apartmentMain">
                 <p>The Apartment</p>
                 <div class="imgContainer">
-                    <img src="/img/appbg2.jpg" alt="">
+                    <img src="https://cdn.pixabay.com/photo/2017/03/19/01/43/living-room-2155376_960_720.jpg" alt="">
                     <button>Living Room</button>
                 </div>
                 
             </div>
+        </section>
             <div class="apartmentImg">
                 <div class="imgBox">
-                    <img src="/img/appbg1.jpg" alt="">
+                    <img src="https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_960_720.jpg" alt="">
                 </div>
                 <div class="imgBox">
-                    <img src="/img/appbg2.jpg" alt="">
+                    <img src="https://cdn.pixabay.com/photo/2015/04/20/06/46/office-730681_960_720.jpg" alt="">
                 </div>
                 <div class="imgBox">
-                    <img src="/img/appbg3.jpg" alt="">
+                    <img src="https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_960_720.jpg" alt="">
                 </div>
                 <div class="imgBox">
-                    <img src="/img/appbg4.jpg" alt="">
+                    <img src="https://cdn.pixabay.com/photo/2015/04/20/06/46/office-730681_960_720.jpg" alt="">
                 </div>
             </div>
             <div class="space">
@@ -96,6 +143,7 @@
                 <p class="extraLastP">Subscribe to receive updates on available dates and special offers.</p>
                 <button>Subscribe</button>
             </div>
+            <section id="contactSection">
             <div class="contact">
                 <h1>Contact</h1>
                 <p><i class="fa-solid fa-location-dot"></i>Lucknow,In</p>
@@ -108,8 +156,9 @@
                 <button>Send a Message</button>
                 <p id="contactLast">Developed By CodEBYKumar</p>
             </div>
-
+        </section>
           </div> 
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
